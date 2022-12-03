@@ -22,7 +22,25 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
         ),
       ),
       body: Column(
-        children: [Image.asset('images/day.jpg')],
+        children: [
+          Image.asset('images/day.jpg'),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            color: Colors.blueGrey,
+            width: double.infinity,
+            child: const Center(
+              child: Text(
+                'gyhjk',
+                style: TextStyle(color: Color.fromARGB(255, 216, 204, 93)),
+              ),
+            ),
+          ),
+          const Divider(
+            color: Colors.black,
+          )
+        ],
       ),
     );
   }
